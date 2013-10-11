@@ -1,0 +1,430 @@
+/*****CSS Stylesheet for internal pages of Maegan Clawges's Portfolio Site*****/
+/***********    By Maegan Clawges, please do not replicate    ************/
+
+/*****FONT IMPORTS*****/
+
+@font-face{
+	font-family:Source Sans Pro;
+	src:url('fonts/Cantarell-Regular.ttf');
+}
+@font-face{
+	font-family:Myriad Pro;
+	src:url('fonts/MyriadPro-Regular.otf');
+}
+@font-face{
+	font-family:Myriad Pro Light;
+	src:url('fonts/MyriadPro-Light.otf');
+}
+h1 {
+    
+    font-size:45px;
+    color:#000;
+    text-align: center;
+}
+h2 {
+    
+    font-size:30px;
+    margin:0;
+    color:#000;
+    text-align: center;
+}
+h3 {
+    
+    font-size:25px;
+    
+    color:#000;
+}
+
+
+.main a {
+    color:#4d47e5;
+    font-family:Source Sans Pro;
+    font-size:1.2em;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+
+#menu-left {
+   position:fixed;
+   left:0px;
+   top:40px;
+   height:580px;
+   width:120px;
+   z-index:50;
+   
+}
+#menu-left img {
+    width:100%;
+    position:absolute;
+    z-index:-1;
+}
+
+#menu-right {
+   position:fixed;
+   right:0px;
+   top:40px;
+   height:580px;
+   width:120px;
+   z-index:50;
+}
+#menu-right img {
+    width:100%;
+     position:absolute;
+    z-index:-1;
+}
+/* Row Dimensions */
+
+.a, .b, .c, .d, .e, .v, .w, .x, .y, .z {
+    width:120px;
+    margin:0;
+    padding:0;
+    opacity:0;
+    position:relative;
+    color:#fff;
+}
+.a {
+    height:115.5px;
+    background-color:#fff;
+}
+.b {
+    height:116px;
+    background-color:#f9f00b;
+}
+.c {
+    height:130px;
+    background-color:#aa0b31;
+}
+.d {
+    height:130px;
+    background-color:#d8611d;
+}
+.e {
+    height:132px;
+    background-color:#4d47e5;
+}
+
+.v {
+    height:125.5px;
+    background-color:#d8611d;
+}
+.w {
+    height:127.5px;
+    background-color:#4d47e5;
+}
+
+.x {
+    height:121px;
+    background-color:#f9f00b;
+}
+.y {
+    height:123px;
+    background-color:#297d0e;
+}
+.z {
+    height:127px;
+    background-color:#aa0b31;
+}
+.a:hover, .b:hover, .c:hover, .d:hover, .e:hover, .v:hover, .w:hover, .x:hover, .y:hover, .z:hover {
+    opacity:1;
+}
+
+#menu-left .a .twitter {
+    margin:5% 2.5%;
+    padding:0;
+    width:95%;
+    z-index:50;
+    
+}
+#nav .e h4 {
+	padding:8% 2.5%;
+    margin:0;
+    width:95%;
+    font-size:6em;
+    font-family:Myriad Pro, Source Sans Pro, sans-serif;
+}
+
+/* style titles in squares */
+#nav a {
+    text-decoration: none;
+    font-family: Myriad Pro, Source Sans Pro, sans-serif;
+}
+#nav a h4 {
+   padding:10% 0%;
+    color:#fff;
+    z-index:50;
+    margin:0;
+    position:relative;
+    font-family:Myriad Pro, Source Sans Pro, sans-serif;
+    line-height:1.2em;
+    font-size:1.3em;
+    text-align: center;
+    width:100%;
+    font-weight:200;
+}
+#nav a h4 strong {
+    font-family:Myriad Pro, Source Sans Pro, sans-serif;
+    font-weight:300;
+    font-size:1.2em;
+    line-height:1.2em;
+}
+
+.main {
+    margin:8% 15%;
+}
+
+.main .intro, .main p {
+    width:80%;
+    margin:2% 10%;
+}
+.ms-head {
+	color:#4d47e5;
+	font-family:Myriad Pro, Source Sans Pro, sans-serif;
+	margin:5% 0;
+}
+ul {
+	padding:1%;
+}
+ol {
+	margin:0 2%;
+}
+.links {
+	list-style-type:disc;
+}
+
+.ms-pm li {
+	margin:0 15%;
+}
+.ms-test {
+	padding-bottom:10%;
+}
+.ms-test li {
+	margin:0 12%;
+}
+.ms-dev {
+	font-size:1.2em;
+	margin:0 10%;
+	color:#4d47e5;
+}
+.main .note {
+    font-style: italic;
+    color:#999;
+}
+.main .end {
+	width:70%;
+	margin:5% 15% 0 15%;
+}
+
+                
+/* Set the fixed height of the footer here */
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width:none;
+}
+
+#footer {
+   position:fixed;
+   left:0;
+   top:0px;
+   height:40px;
+   width:100%;
+   background:#818181;
+}
+#footer a {
+	color:#fff;
+}
+
+/* Style footer content */
+.credit {
+    margin-left:10%;
+}
+.credit h5 {
+    font-family:Myriad Pro Light, Source Sans Pro, sans-serif;
+    color:#fff;
+    float:left;
+    font-size:1.4em;   
+}
+.credit .right {
+    margin:0 12% 0 0;
+    color:#fff;
+    float:right;
+    position:relative;
+    width:30%;
+}
+.credit .right a:hover {
+    background:#4d47e5;
+}
+            
+            .credit .right a:last-child {
+                    border-left:2px solid #fff;
+            }
+    .credit .right a {
+            text-decoration: none;
+            float:right;
+            position:relative;
+            margin:0;
+            font-family:Myriad Pro, Source Sans Pro, sans-serif;
+            padding:8px 6%;
+            font-size:1.1em;
+            border-right:2px solid #fff;
+            color:#fff;
+            
+    }
+    
+ .about {
+	margin:0;
+	padding:0;
+	z-index:100;
+}
+.about h6 {
+	
+color:#fff;
+    float:left;
+    font-weight:400;
+    font-size:1em;
+    line-height: 1.3em;
+    margin: 20px 0 0 0;
+    padding-bottom:0;
+}
+.about .left {
+	float:left;
+	width:30%;
+	margin-left:15%;
+}
+.about .right {
+	float:right;
+	width:35%;
+	margin-right:15%;
+}
+.about h6 strong {
+	font-size:1.1em;
+	font-weight:500;
+	
+}
+
+#nav .main a .misuse{
+	padding:1% 0;
+	margin:0 20%;
+	border-radius:20px;
+	background-color:#4d47e5;
+	text-align: center;
+	color:#fff;
+	width:60%;
+	font-size:.9em;
+	z-index:-100;
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .credit .right a {
+        padding-top:4%;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .credit .right a {
+        padding-top:3%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+   .credit h5 { 
+        margin-left:4%;   
+    }
+    .credit .right {
+        margin-right: 5%;
+    }
+}
+    @media only screen and (max-width: 1150px) {
+
+    .about h6 {
+	font-size: .95em;
+    }
+    .about h6 strong{
+	font-size: 1.1em;
+    }
+}
+@media only screen and (max-width: 1050px) {
+
+    .about h6 {
+	font-size: .9em;
+    }
+    .about h6 strong{
+	font-size: 1em;
+    }
+    .about .left {
+	margin-left:17%;
+	width:36%;
+	
+    }
+    .about .right {
+	margin-right:17%;
+	width:30%;
+	
+    }
+}
+@media only screen and (max-width: 900px) {
+
+    .about h6 {
+	font-size: 1em;
+    }
+    .about h6 strong{
+	font-size: 1.1em;
+    }
+    .about .left {
+	float:none;
+	width:60%;
+	margin-left:25%;
+    }
+    .about .right {
+	float:none;
+	width:50%;
+	margin-left:25%;
+    }
+    .about {
+	height:130px;
+	overflow: scroll;
+    }
+    .links {
+	margin:0 7% 0 5%;
+}
+    
+}
+@media only screen and (max-width: 800px) {
+    .credit h5 { 
+        margin-left:2%;
+        font-size:1.3em;
+    }
+    .credit .right {
+        margin-right: 0;
+        font-size:.9em;
+        width:40%;
+    }
+}
+a {
+	font-family: Myriad Pro, Source Sans Pro, sans-serif;
+	color:#fff;
+}

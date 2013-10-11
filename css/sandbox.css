@@ -1,0 +1,453 @@
+/*****CSS Stylesheet for home page of Maegan Clawges's Portfolio Site*****/
+/***********    By Maegan Clawges, please do not replicate    ************/
+
+/*****FONT IMPORTS*****/
+
+@font-face{
+	font-family:Source Sans Pro;
+	src:url('fonts/Cantarell-Regular.ttf');
+}
+@font-face{
+	font-family:Myriad Pro;
+	src:url('fonts/MyriadPro-Regular.otf');
+}
+
+/*****BODY*****/
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+.main {
+    width:100%;
+    height:100%;
+}
+#footer a {
+    color:#4d47e5;
+    font-family:Source Sans Pro, sans-serif;
+    font-size:1.1em;
+}
+/* Position colored box portrait */
+
+.main img {
+    padding:0 15%;
+    width:100%;
+    position:absolute;
+    z-index:-1;
+}
+
+/* Row Dimensions */
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+    width:70%;
+    margin:0 15%;
+    padding:0;
+    position:relative;
+     height:0;
+}
+.a {
+    padding-bottom:10.6%;
+}
+.b {
+    padding-bottom:12.3%;
+}
+.c {
+    padding-bottom:11.8%;
+}
+.d {
+    padding-bottom:12%;
+}
+.e {
+	padding-bottom:11.75%;
+}
+.f {
+	padding-bottom:12.1%;
+}
+.g {
+	padding-bottom:11.75%;
+}
+.h {
+	padding-bottom:12%;
+}
+
+/* Column Dimensions */
+
+.u, .v, .w, .x, .y, .z {
+    float:left;
+    position:absolute;
+    z-index:100;
+    height:100%;
+    }
+.u {
+    top:0;
+    left:0;
+    width:15.8%;
+}
+.v {
+    top:0;
+    left:15.8%;
+    width:17%;
+}
+.w {
+    top:0;
+    left:32.8%;
+    width:17%;
+}
+.x {
+    top:0;
+    left:49.8%;
+    width:16.8%;
+}
+.y {
+    top:0;
+    left:66.6%;
+    width:16.9%;
+}
+.z {
+    top:0;
+    left:83.5%;
+    width:16.5%;
+}
+
+/* set :hover visibility and color for squares */
+
+
+.a .w, .c .v, .c .z, .d .x, .f .v, .f .y, .h .w, .h .z {
+    background-color:#50acf9; /**blue**/
+}
+.a .x, .b .u, .b .z, .c .w, .d .y, .e .v, .f .x, .g .z, .h .u {
+    background-color:#f9f00b; /**yellow**/
+}
+.a .v, .c .u, .e .w, .e .z, .f .u, .g .x, .h .v {
+    background-color:#4d47e5; /**purple**/
+}
+.b .x, .c .z {
+    background-color: #fff;
+}
+.a .u, .a .y, .c .x, .d .v, .e .y, .f .w, .g .u, .h .x {
+    background-color:#297d0e; /**green**/
+}
+.b .v, .b .y, .d .w, .d .z, .e .u, .g .v, .g .y {
+    background-color:#d8611d; /**orange**/
+}
+.a .z, .b .w, .c .y, .d .u, .e .x, .f .z, .g .w, .h .y {
+    background-color:#aa0b31; /**red**/
+}
+
+/* style titles in squares */
+
+h4 {
+    padding:10% 0%;
+    color:#fff;
+    z-index:50;
+    margin:0;
+    position:relative;
+    font-family:Myriad Pro, Source Sans Pro, sans-serif;
+    line-height:1.2em;
+    font-size:.17em;
+    text-align: center;
+    width:100%;
+    font-weight:200;
+}
+h4 strong {
+    font-family:Source Sans Pro, sans-serif;
+    font-weight:600;
+    font-size:1.1em;
+}
+.x .logo {
+    margin:15% 9%;
+    padding:0;
+    width:85%;
+    
+}
+
+ .z .twitter {
+    margin:5% 2.5%;
+    padding:0;
+    width:95%;
+    
+}
+.u .linked-in {
+	margin:5% 2.5%;
+    padding:0;
+    width:95%;
+}
+a, a strong{
+	font-family:Source Sans Pro, sans-serif;
+}
+a:hover {
+	text-decoration: none;
+}
+.resume {
+    margin-top:70%;
+    color:#520099;
+    font-family:Myriad Pro, Source Sans Pro, sans-serif;
+    font-size:.17em;
+    font-weight:600;
+}
+.in {
+	margin-top:0;
+	font-size:.7em;
+	font-family:Myriad Pro, Arial, sans-serif;
+}
+
+
+
+
+/*****FOOTER*****/
+
+/* Set the fixed height of the footer here */
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+
+
+#footer > .container {
+  
+  max-width:none;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   background:#818181;
+   z-index:100;
+}
+
+
+/* Style footer content */
+
+.credit h5 {
+	
+color:#fff;
+font-weight:400;
+    float:left;
+    font-size:.24em;
+    margin-left: 14%;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+.credit #aboutButton, .credit #close {
+    float:right;
+    margin-right:15%;
+    cursor:pointer;
+    
+}
+
+.credit a {
+	color:#fff;
+}
+
+.about {
+	margin:0;
+	padding:0;
+}
+.about h6 {
+	
+color:#fff;
+    float:left;
+    font-weight:400;
+    font-size:.17em;
+    line-height: 1.3em;
+    margin: 10px 0 0 0;
+    padding-bottom:0;
+    
+}
+.about .left {
+	float:left;
+	width:30%;
+	margin-left:15%;
+}
+.about .right {
+	float:right;
+	width:35%;
+	margin-right:15%;
+}
+.about h6 strong {
+	font-size:1.05em;
+	font-weight:500;
+	
+}
+.about .right a{
+	color:#fff;
+}
+
+.credit #aboutButton{
+	border-left:2px solid #fff;
+	
+	padding:10px 15px;
+	margin-top:0;
+}
+.credit #close {
+	background:#4d47e5;
+	padding:10px 15px;
+	margin-top:0;
+}
+.credit #aboutButton:hover, .credit #close:hover {
+	color:#fff;
+	background:#4d47e5;
+}
+
+@media only screen and (max-width: 1150px) {
+	.about .left {
+	
+	width:35%;
+	margin-left:15%;
+}
+.about .right a{
+	width:35%;
+	margin-right:12%;
+}
+
+}
+@media only screen and (max-width: 1000px) {
+   .credit h5 { 
+        margin-left:4%;   
+    }
+    .about .left {
+	
+	width:40%;
+	margin-left:6%;
+}
+.about .right {
+	width:40%;
+	margin-right:6%;
+}
+.credit #aboutButton, .credit #close {
+   
+    margin-right:10%;
+    
+}
+}
+@media only screen and (max-width: 900px) {
+	/*.about h6 {
+		font-size:.9em;
+	}*/
+}
+@media only screen and (max-width: 800px) {
+    .credit h5 { 
+        margin-left:8%;
+        /*font-size:1.3em;*/
+    }
+    .credit h5:last-child {
+        margin-right: 8%
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+    .main img {
+    padding:0;
+}
+    
+.a, .b, .c, .d, .e, .f, .g, .h {
+    width:100%;
+    margin:0;
+}
+.a {
+    padding-bottom:15.1%;
+}
+.b {
+    padding-bottom:17.5%;
+}
+.c {
+    padding-bottom:17%;
+}
+.d {
+    padding-bottom:17%;
+}
+.e {
+	padding-bottom:16.7%;
+}
+.f {
+	padding-bottom:17.2%;
+}
+.g {
+	padding-bottom:17%;
+}
+.h {
+	padding-bottom:17%;
+}
+h4 {
+	font-size:.265em;
+	padding:6% 0%;
+	line-height:1.25em;
+}
+.resume {
+    
+    font-size:.3em;
+    margin-top:68%;
+}
+.in {
+	margin-top:8%;
+	font-size:1em;
+}
+#footer {
+	height:30px;
+}
+    .credit h5 {
+	font-size:.3em;
+	margin-left:5%;
+    }
+    .credit #aboutButton, .credit #close {
+    
+    margin-right:5%;
+    
+}
+}
+@media only screen and (min-width: 1000px) {
+.main img {
+    padding:0 22%;
+}
+    
+.a, .b, .c, .d, .e, .f, .g, .h {
+    width:56%;
+    margin:0 22%;
+}
+.a {
+    padding-bottom:8.5%;
+}
+.b {
+    padding-bottom:9.8%;
+}
+.c {
+    padding-bottom:9.5%;
+}
+.d {
+    padding-bottom:9.4%;
+}
+.e {
+	padding-bottom:9.5%;
+}
+.f {
+	padding-bottom:9.7%;
+}
+.g {
+	padding-bottom:9.4%;
+}
+.h {
+	padding-bottom:9.5%;
+}
+h4 {
+    padding:7% 0%;
+}
+.in {
+	margin-top:10%;
+}
+}

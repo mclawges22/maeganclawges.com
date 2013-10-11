@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Maegan Clawges">
+
+    <title>Logo and T-shirt Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/pages.css" rel="stylesheet">
+    <link href="css/logos.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+<div id="footer">
+  
+    <div class="container credit">
+      <h5>Maegan Clawges's Portfolio</h5>
+      <div class="right">
+        <a href="images/MaeganClawgesResume2013.pdf">Resume</a>
+        <a href="#" id="aboutButton">About</a>
+        <a href="#" id="close">Close</a>
+        <a href = "index.html">Home</a>
+      </div>
+    </div>
+    <div class="about">
+      <h6 class="left"><strong>The University of Chapel Hill, Class of 2015</strong><br>
+        The School of Journalism and Mass Communication: <br>
+        &nbsp&nbsp&nbsp&nbspGraphic and Interactive Design, B.A.<br>
+        Department of Computer Science, B.A.<br><br>
+        Email: &nbsp&nbsp<a href="mailto:mclawges22@gmail.com">mclawges22@gmail.com</a>
+      </h6>
+      <h6 class="right">
+        I love designing to bring joy and efficiency to people's lives. I am looking for internship opportunities for Summer 2014
+        to continue exploring my core interests, including: 
+        <strong>user experience and interaction design, web development, graphic design and/or journalism.</strong>   
+      </h6>
+    </div>
+    
+</div>
+
+<div id="wrap">
+  
+  <div id="nav">
+    <div id="menu-left">
+      <img src="images/nav-left.png">
+      
+      <div class="a">
+          <a href="https://twitter.com/MaeganClawges"><img class="twitter" src="images/twitter-trans.png"></a>
+       </div>
+      <div class="b">
+       </div>
+      <div class="c">
+       </div>
+      <div class="d">
+       </div>
+      <div class="e">
+          <a href="http://www.linkedin.com/pub/maegan-clawges/62/77/a80 "><h4 class="in">in</h4></a>
+      </div>
+  </div>
+    
+  <div class="main">
+    <h1>Logo and T-shirt Design</h1>
+    
+    <img class="blue-hat" src="images/Blue Hat logo v3.png">
+    <h5 class="caption right">I made this logo for a design competition for Microsoft's Blue Hat Security Conference.<br>
+      It won first place and will be featured across their branding and promotional merchandise.</h5>
+    
+    <div class="box-out">
+        <img src="images/BoxOut1.png">
+        <h5 class="caption">I created this t-shirt design for an event at UNC-Chapel Hill at which students built forts out of
+          cardboard boxes and spent the night in them outside on the quad to raise money for local homeless shelters.
+        </h5>   
+    </div>
+    
+    <div class="school-garden">
+        <img src="images/SchoolGardenT.jpg">
+        <h5 class="caption">This was a t-shirt design for my high school garden. The businesses featured on the shirts sponsored
+          the garden and the students sold the shirts to raise money. I drew this t-shirt design by hand to give it a homegrown feel
+          and then made it into a digital image to be printed on light blue shirts.
+        </h5>
+    </div>
+</div>
+
+  <div id="menu-right">
+      <img src="images/nav-right-1.png">
+      <div class="v">
+          <a href="microsoft.html"><h4 style="padding-top:15%"><strong>Microsoft</strong><br>Windows<br>User<br>Experience</h4></a>
+       </div>
+      <div class="w">
+          <a href="powering-a-nation.html"><h4 style="padding-top:15%"><strong>Powering<br>A Nation</strong><br>Interactive<br>Water Story</h4></a>
+       </div>
+      <div class="x">
+       </div>
+      <div class="y">
+          <a href="logos.html"><h4 style="padding-top:20%"><strong>Logos and<br>T-shirt<br>Design</strong></h4></a>
+       </div>
+      <div class="z">
+          <a href="daily-tar-heel.html"><h4 style="padding-top:15%"><strong>Newspaper<br>Design</strong> <br>The Daily<br>Tar Heel</h4></a>
+       </div>
+    </div>
+  </div>
+  
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    console.log("Document is ready to go!");
+    
+    $("#close").hide();
+    $(".about").hide();
+    
+    $("#aboutButton").click(function() {
+        $(".about").show();
+        $("#close").toggle();
+        $("#aboutButton").toggle();
+        $("#footer").css("height","190px");
+    });
+    $("#close").click(function() {
+        $(".about").hide();
+        $("#close").toggle();
+        $("#aboutButton").toggle();
+        $("#footer").css("height","40px");
+    });
+});
+</script>
+
+</body>
+</html>
