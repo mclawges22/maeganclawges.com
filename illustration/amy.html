@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Maegan Clawges">
-    <link rel="shortcut icon" href="images/mc3.png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Maegan Clawges">
+  <link rel="shortcut icon" href="../images/mc3.png">
 
-    <title>The Amy Dance</title>
+  <title>The Amy Dance</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="../css/pages.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="../css/pages.css" rel="stylesheet">
+</head>
 
 <body>
   <div id="header">
     <div class="toolbar">
-      <h5><a href="index.html">Maegan Clawges</a>,&nbsp;
+      <h5><a href="../index.html">Maegan Clawges</a>,&nbsp;
         <b>data visualization engineer and designer</b>
       </h5>
       <div class="right">
-        <a href="MaeganClawgesResume.pdf" target="_blank" id="resume">
+        <a href="../MaeganClawgesResume.pdf" target="_blank" id="resume">
           <h2>Resume</h2></a>
         <a href="https://twitter.com/MaeganClawges" target="_blank" id="twitter">
           <img src="../images/twitter-purple.png"></a>
@@ -50,23 +45,21 @@
     <h2 class="menu-mobile"><a href="../motion">Motion</a></h2>
     <h2><a href="../web/pearlhacks.html">Pearl Hacks</a></h2>
   </div>
+
 	<img class="portrait" src="../images/TheAmyDance.png" style="width:100%;margin-top:40px">
 	<div class="overlay-full" style="width:100%">
 		<h2>The Amy Dance</h2>
-	  <h4 style="text-align:center">An illustration to be the cover image for my
-      friend's YouTube and Twitter accounts.
+	  <h4 style="text-align:center">
+      An illustration to be the cover image for my friend's YouTube and Twitter accounts.
     </h4>
   </div>
+
 	<script src="../js/jquery_v1.11.1.js"></script>
+  <script src="../js/helper.js"></script>
 
 	<script>
 	$(document).ready(function() {
-		$(".portrait").mouseenter(function(){
-			$(".overlay-full").css("opacity", 0.9);
-		});
-		$(".portrait").mouseout(function(){
-			$(".overlay-full").css("opacity", 0.01);
-		});
+		initPortraitOverlay();
 	});
 	</script>
 
