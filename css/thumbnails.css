@@ -1,0 +1,245 @@
+.images {
+  z-index: -100;
+  position: absolute;
+  width:80%;
+  margin:0;
+}
+
+.thumbnail {
+  width: 29%;
+  margin: 2%;
+  float: right;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.20);
+  border: 1px solid #b397c7;
+  border-radius: 4px;
+}
+
+.web .tn1 {
+  background: #ffffff url("../images/thumbnails/makinggrade1.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn1 {
+  background: #ffffff url("../images/thumbnails/rose.png") no-repeat right top;
+  background-size: cover;
+}
+
+.web .tn3 {
+  background: #ffffff url("../images/thumbnails/shark.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn3 {
+  background: #ffffff url("../images/thumbnails/janus.png") no-repeat right top;
+  background-size: cover;
+}
+
+.web .tn2 {
+  background: #ffffff url("../images/thumbnails/airbnb.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn2 {
+  background: #ffffff url("../images/thumbnails/scarlet.jpg") no-repeat right top;
+  background-size: cover;
+}
+
+.web .tn5 {
+  background: #ffffff url("../images/thumbnails/somewhere.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn5 {
+  background: #ffffff url("../images/thumbnails/amy.png") no-repeat right top;
+  background-size: cover;
+}
+
+.web .tn6 {
+  background: #ffffff url("../images/thumbnails/pearlhacks.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn6 {
+  background: #ffffff url("../images/thumbnails/believe.png") no-repeat right top;
+  background-size: cover;
+}
+
+.web .tn4 {
+  background: #ffffff url("../images/thumbnails/cultureux.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn4 {
+  background: #ffffff url("../images/thumbnails/boxportrait.png") no-repeat right top;
+  background-size: cover;
+}
+
+.web .tn7 {
+  background: #ffffff url("../images/thumbnails/sesame.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn7 {
+  background: #ffffff url("../images/thumbnails/garden.png") no-repeat right top;
+  background-size: cover;
+}
+
+.web .tn8 {
+  background: #ffffff url("../images/thumbnails/dress.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn8 {
+  background: #ffffff url("../images/thumbnails/portrait.png") no-repeat right top;
+  background-size: cover;
+}
+
+.web .tn9 {
+  background: #ffffff url("../images/thumbnails/pan.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn9 {
+  background: #ffffff url("../images/thumbnails/boxout.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn10 {
+  background: #ffffff url("../images/thumbnails/halo.png") no-repeat right top;
+  background-size: cover;
+}
+
+.illustration .tn11 {
+  background: #ffffff url("../images/thumbnails/broken.png") no-repeat right top;
+  background-size: cover;
+}
+
+.overlay-wrapper {
+  z-index: -1;
+  position:abolute;
+  width:100%;
+  margin:20px 0;
+}
+
+.overlay {
+  width: 29%;
+  margin: 2%;
+  float: right;
+  background-color: #212121;
+  opacity: .001;
+  border: 1px solid #212121;
+  border-radius: 4px;
+}
+.overlay:hover {
+  opacity: .9;
+}
+.overlay h4 {
+  opacity: 1;
+  color: #FFF;
+  font-weight: 300;
+  padding: 40px;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1.3em
+}
+
+.overlay h6 {
+  font-weight: 300;
+  color: #FFF;
+  font-size: 14px;
+  text-align: center;
+}
+
+.overlay h6 a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 6px 10px;
+  border-radius:2px;
+}
+
+.overlay h6 a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+.video {
+  width:70%;
+  margin: 20px 15%;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.20);
+  border: 1px solid #b397c7;
+}
+
+.motion h5 {
+  width: 70%;
+  margin: 20px 15%;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+.motion h5 b {
+  font-weight: 400;
+}
+
+
+@media only screen and (max-width: 1075px) {
+  .thumbnail {
+    width: 40%;
+    margin: 4%;
+  }
+  .overlay {
+    width: 40%;
+    margin: 4%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .overlay h4 {
+    padding: 20px;
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .web, .illustration, .motion {
+    width: 90%;
+    margin: 120px 5%;
+  }
+  .overlay-wrapper {
+    z-index: -1;
+    position:abolute;
+    width:100%;
+    margin:20px 0;
+  }
+
+  .images {
+
+    width:90%;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .web, .illustration, .motion {
+    margin: 50px 5%;
+  }
+  .overlay h4 {
+    padding: 10px 10px;
+    padding-top: 0;
+  }
+  .overlay h6 {
+    margin-top: 10px;
+    font-size: 12px
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .overlay h4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .overlay h4 {
+    font-size: 16px;
+  }
+}
