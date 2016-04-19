@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Maegan Clawges">
+    <link rel="shortcut icon" href="images/mc3.png">
+
+    <title>API Mashup</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/pages.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  <div id="header">
+      <div class="toolbar">
+        <h5><a href="index.html">Maegan Clawges</a>,&nbsp; <b>data visualization engineer and designer</b></h5>
+        <div class="right">
+          <a href="MaeganClawgesResume.pdf" target="_blank" id="resume"><h2>Resume</h2></a>
+          <a href="https://twitter.com/MaeganClawges" target="_blank" id="twitter"><img src="images/twitter-purple.png"></a>
+          <a href="https://medium.com/@MaeganClawges" target="_blank" id="medium"><img src="images/medium-purple.png"></a>
+          <a href="https://linkedin.com/in/maeganclawges" target="_blank" id="linked-in"><img src="images/linkedin-purple.png"></a>
+          <a href="https://github.com/mclawges22" target="_blank" id="github"><img src="images/github-purple.png"></a>
+        </div>
+      </div>
+  </div>
+  <div id="menu">
+    <img id="initials" src="images/mc3.png">
+    <h2 class="menu-desktop"><a href="web.html">Web projects</a></h2>
+    <h2 class="menu-mobile"><a href="web.html">Web</a></h2>
+    <h2><a href="illustration.html">Illustration</a></h2>
+    <h2 class="menu-desktop"><a href="motion.html">Motion/Video</a></h2>
+    <h2 class="menu-mobile"><a href="motion.html">Motion</a></h2>
+    <h2><a href="pearlhacks.html">Pearl Hacks</a></h2>
+
+  </div>
+
+  <div class="main">
+    <h1><a href="http://maeganclawges.com/static/final/api.php" target="_blank">Somewhere Over The Rainbow</a></h1>
+    <h2>An API Mashup</h2>
+
+    <p>I began this project as an individual entry at a hackathon two weeks ago. In “Somewhere Over The Rainbow” I create a user interface for people researching places they might want to move to or visit. My main goal is to bring together data from a variety of sites in a single user interface to give the user an overall feel for the city without having to search five different sites. Right now you can search for a city and the Google GeoCode API will provide the latitude/longitude of the location to the Google map API. I also use PHP to access the Twitter search API and stream tweets including the hashtag for the city. An iframe loads in the “data” tab with statistics about the quality of life and cost of living. Over the next week I am going to add an photo stream from the Instagram search API. The yellow “home” tab will feature the predicted weather for the selected time of year from the Weather Channel’s API as well as a few tweets and photos. The final part of the project will involve allowing users to create accounts on my server and save their favorite searches to allow them to easily track areas of interest. It has been a lot of fun learning to use the Google maps/geocode API as well as the other APIs.</p>
+    <a href="http://maeganclawges.com/static/final/api.php" target="_blank" class="button-link"><h4 class="button" style="margin-top:20px">Click here to see the web app</h4></a>
+    <a href="http://maeganclawges.com/static/final/api.php" target="_blank"><img src="images/rainbowInstagram.png"></a>
+    <h2 class="dark-purple">Design Process</h2>
+    <p>I began the project with the concept of a large map filling the screen with the API data in some sort of overlaid container. I explored a variety of designs for organizing the data, such as side tabs, top tabs, separate boxes for each type, etc. I also started out with a much more complex UI representing the user in the top right corner. Then I realized that the user did not really need all those options to achieve the goal so I simplified the header. See below for my various iterations from sketching to comp and then visit the <a href="http://maeganclawges.com/static/final/api.php">current site</a>.</p>
+    <img src="images/rainbowSketch.JPG">
+    <h2 class="dark-purple">Final Comp</h2>
+    <p>I decided to put the tabs on the top of the data overlay because reading sideways felt like it would be too hard on the reader and didn't necessarily add to the visual appeal of the map. I also liked the name "Somewhere Over The Rainbow" because it lent itself to a lightweight and joyful color scheme that tied the page together. This is the design I made in Adobe Illustrator before I began to code. I used layers to show different states of the page basec on different user scenarios. At this stage I discovered another way to siplify the UI - through the search flow. I originally planned to overlay a window with advanced search options every time the user wanted a new search. After adding it to my comp I realized that some of the options I was going to offer were not necessary and others could be incorporated at different spots in the UI. For example, the time of year selection that controls the weather data.</p>
+    <img src="images/SomewhereOverTheRainbow.png">
+  </div>
+
+</div>
+<script src="js/jquery_v1.11.1.js"></script>
+
+<script>
+$(document).ready(function() {
+    console.log("Document is ready to go!");
+
+    $("#close").hide();
+    $(".about").hide();
+
+    $("#aboutButton").click(function() {
+        $(".about").show();
+        $("#close").toggle();
+        $("#aboutButton").toggle();
+        $("#footer").css("height","190px");
+    });
+    $("#close").click(function() {
+        $(".about").hide();
+        $("#close").toggle();
+        $("#aboutButton").toggle();
+        $("#footer").css("height","40px");
+    });
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45910068-1', 'maeganclawges.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Maegan Clawges">
+    <link rel="shortcut icon" href="images/mc3.png">
+
+    <title>Garden t-shirt</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/pages.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  <div id="header">
+      <div class="toolbar">
+        <h5><a href="index.html">Maegan Clawges</a>,&nbsp; <b>data visualization engineer and designer</b></h5>
+        <div class="right">
+          <a href="MaeganClawgesResume.pdf" target="_blank" id="resume"><h2>Resume</h2></a>
+          <a href="https://twitter.com/MaeganClawges" target="_blank" id="twitter"><img src="images/twitter-purple.png"></a>
+          <a href="https://medium.com/@MaeganClawges" target="_blank" id="medium"><img src="images/medium-purple.png"></a>
+          <a href="https://linkedin.com/in/maeganclawges" target="_blank" id="linked-in"><img src="images/linkedin-purple.png"></a>
+          <a href="https://github.com/mclawges22" target="_blank" id="github"><img src="images/github-purple.png"></a>
+        </div>
+      </div>
+  </div>
+  <div id="menu">
+    <img id="initials" src="images/mc3.png">
+    <h2 class="menu-desktop"><a href="web.html">Web projects</a></h2>
+    <h2 class="menu-mobile"><a href="web.html">Web</a></h2>
+    <h2><a href="illustration.html">Illustration</a></h2>
+    <h2 class="menu-desktop"><a href="motion.html">Motion/Video</a></h2>
+    <h2 class="menu-mobile"><a href="motion.html">Motion</a></h2>
+    <h2><a href="pearlhacks.html">Pearl Hacks</a></h2>
+
+  </div>
+	<img class="portrait" src="images/garden.jpg">
+	<div class="overlay-full janus">
+		<h2>Community garden t-shirt</h2>
+	<h4>I drew this t-shirt design by hand, and it was later converted to a digital image for printing on light blue shirts. I wanted to include all the sponsors of our local community garden, but make sure the design was something people would want to wear.
+  </h4></div>
+	<script src="js/jquery_v1.11.1.js"></script>
+
+	<script>
+
+	$(document).ready(function() {
+	    console.log("Document is ready to go!");
+      var height = $( window ).height();
+	    var width = $( window ).width();
+      $(".portrait").css("height", height-40);
+      $(window).load(function(){
+  	    if (width > 450) {
+
+  				var portraitWidth = $(".portrait").width();
+  				var margins = (width - portraitWidth) / 2;
+  				$(".portrait").css("margin-top", 40);
+  	      $(".portrait").css("margin-left", margins);
+  	      $(".portrait").css("margin-right", margins);
+          $(".overlay-full").css("width", portraitWidth-80);
+  				$(".overlay-full").css("margin-left", margins);
+  	      $(".overlay-full").css("margin-right", margins);
+  	    } else {
+
+          $(".portrait").css("margin-top", 40);
+  	      $(".portrait").css("margin-left", "0");
+  	      $(".portrait").css("margin-right", "0");
+  				$(".overlay-full").css("height", height);
+  	      $(".overlay-full").css("margin-left", "0");
+  	      $(".overlay-full").css("margin-right", "0");
+  	    }
+      });
+
+	  $( window ).resize(function() {
+			var height = $( window ).height();
+	    var width = $( window ).width();
+      if (width > 450) {
+				$(".portrait").css("height", height-40);
+
+				var portraitWidth = $(".portrait").width();
+				var margins = (width - portraitWidth) / 2;
+				$(".portrait").css("margin-top", 40);
+	      $(".portrait").css("margin-left", margins);
+	      $(".portrait").css("margin-right", margins);
+        $(".overlay-full").css("width", portraitWidth-80);
+				$(".overlay-full").css("margin-left", margins);
+	      $(".overlay-full").css("margin-right", margins);
+	    } else {
+	      $(".portrait").css("height", height-40);
+        $(".portrait").css("margin-top", 40);
+	      $(".portrait").css("margin-left", "0");
+	      $(".portrait").css("margin-right", "0");
+				$(".overlay-full").css("height", height);
+	      $(".overlay-full").css("margin-left", "0");
+	      $(".overlay-full").css("margin-right", "0");
+	    }
+	  });
+		$(".portrait").mouseenter(function(){
+			$(".overlay-full").css("opacity", 0.9);
+		});
+		$(".portrait").mouseout(function(){
+			$(".overlay-full").css("opacity", 0.01);
+		});
+	});
+	</script>
+
+</body>
+</html>
