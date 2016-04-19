@@ -13,8 +13,8 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     h2 {
         margin:0;
         text-align: center;
-        font-weight:500;
-        font-size: 21px;
+        font-weight:400;
+        font-size: 30px;
     }
     h3 {
         font-size:25px;
@@ -35,9 +35,8 @@ body {
 }
 
 .dark-purple {
+		margin-top: 40px;
     color:#652d90;
-    text-align: left;
-    margin-left:12%;
 }
 .purple {
     color:#b397c7;
@@ -215,8 +214,8 @@ body {
             text-decoration: none;
         }
     .main a .button {
-        padding:1% 0;
-        margin:0 20%;
+        padding:8px 0;
+        margin:10px 20%;
         border-radius:20px;
         background-color:#652d90;
         text-align: center;
