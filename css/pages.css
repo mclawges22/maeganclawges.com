@@ -3,7 +3,7 @@
 
 h1, h2, h3, h4, h5, h6, p, a, li {
 	font-family: Roboto;
-	font-weight: 500;
+	font-weight: 400;
 }
     h1 {
         font-size:45px;
@@ -14,7 +14,8 @@ h1, h2, h3, h4, h5, h6, p, a, li {
         margin:0;
         text-align: center;
         font-weight:400;
-        font-size: 30px;
+        font-size: 24px;
+				line-height: 1.3em;
     }
     h3 {
         font-size:25px;
@@ -215,12 +216,12 @@ body {
         }
     .main a .button {
         padding:8px 0;
-        margin:10px 20%;
+        margin:10px auto;
         border-radius:20px;
         background-color:#652d90;
         text-align: center;
         color:#fff;
-        width:60%;
+        width: 240px;
         font-size:18px;
         z-index:-100;
         font-weight:400;
