@@ -4,7 +4,7 @@ $(document).ready(function() {
   var width = $(window).width();
   $(".main").css("height", height - 40);
   $(".portrait").css("height", height - 40);
-  
+
   // Mobile v. Desktop treatment
   if (width > 450) {
     var portraitWidth = (height - 40) * .7466307277;
@@ -55,185 +55,197 @@ $(document).ready(function() {
 
   // Timers for fading out the boxes in a seemingly chaotic order.
   setTimeout(function() {
-    $("#22").fadeTo("slow", 0.01);
+    $("#28").fadeTo("slow", 0.01);
   }, 10);
 
   setTimeout(function() {
-    $("#28").fadeTo("slow", 0.01);
-  }, 100);
-
-  setTimeout(function() {
     $("#34").fadeTo("slow", 0.01);
-  }, 200);
+  }, 90);
 
   setTimeout(function() {
     $("#35").fadeTo("slow", 0.01);
-  }, 350);
+  }, 170);
 
   setTimeout(function() {
     $("#29").fadeTo("slow", 0.01);
-  }, 500);
-
+  }, 250);
+/*
   setTimeout(function() {
-    $("#8").fadeTo("slow", 0.01);
-  }, 650);
-
+    $("#23").fadeTo("slow", 0.01);
+  }, 330);
+*/
   setTimeout(function() {
-    $("#16").fadeTo("slow", 0.01);
-  }, 800);
-
-  setTimeout(function() {
-    $("#17").fadeTo("slow", 0.01);
-  }, 1000);
-
-  setTimeout(function() {
-    $("#1").fadeTo("slow", 0.01);
-  }, 1200);
-
-  setTimeout(function() {
-    $("#14").fadeTo("slow", 0.01);
-  }, 1400);
-
-  setTimeout(function() {
-    $("#19").fadeTo("slow", 0.01);
-  }, 1600);
+    $("#22").fadeTo("slow", 0.01);
+  }, 410);
 
   setTimeout(function() {
     $("#21").fadeTo("slow", 0.01);
-  }, 1800);
-
-  setTimeout(function() {
-    $("#10").fadeTo("slow", 0.01);
-  }, 2000);
+  }, 490);
 
   setTimeout(function() {
     $("#27").fadeTo("slow", 0.01);
-  }, 2200);
+  }, 570);
 
   setTimeout(function() {
     $("#33").fadeTo("slow", 0.01);
-  }, 2400);
-
-  setTimeout(function() {
-    $("#32").fadeTo("slow", 0.01);
-  }, 2600);
-
-  setTimeout(function() {
-    $("#26").fadeTo("slow", 0.01);
-  }, 3000);
-
-  setTimeout(function() {
-    $("#11").fadeTo("slow", 0.01);
-  }, 3100);
-
-  setTimeout(function() {
-    $("#5").fadeTo("slow", 0.01);
-  }, 3200);
-
-  setTimeout(function() {
-    $("#4").fadeTo("slow", 0.01);
-  }, 3300);
-
-  setTimeout(function() {
-    $("#42").fadeTo("slow", 0.01);
-  }, 3400);
-
-  setTimeout(function() {
-    $("#30").fadeTo("slow", 0.01);
-  }, 3500);
-
-  setTimeout(function() {
-    $("#24").fadeTo("slow", 0.01);
-  }, 3600);
-
-  setTimeout(function() {
-    $("#48").fadeTo("slow", 0.01);
-  }, 3700);
-
-  setTimeout(function() {
-    $("#25").fadeTo("slow", 0.01);
-  }, 3800);
-
-  setTimeout(function() {
-    $("#47").fadeTo("slow", 0.01);
-  }, 3900);
-
-  setTimeout(function() {
-    $("#41").fadeTo("slow", 0.01);
-  }, 4000);
-
-  setTimeout(function() {
-    $("#31").fadeTo("slow", 0.01);
-  }, 4100);
-
-  setTimeout(function() {
-    $("#40").fadeTo("slow", 0.01);
-  }, 4200);
-
-  setTimeout(function() {
-    $("#37").fadeTo("slow", 0.01);
-  }, 4300);
-
-  setTimeout(function() {
-    $("#41").fadeTo("slow", 0.01);
-  }, 4400);
-
-  setTimeout(function() {
-    $("#38").fadeTo("slow", 0.01);
-  }, 4500);
-
-  setTimeout(function() {
-    $("#2").fadeTo("slow", 0.01);
-  }, 4600);
-
-  setTimeout(function() {
-    $("#9").fadeTo("slow", 0.01);
-  }, 4700);
-
-  setTimeout(function() {
-    $("#6").fadeTo("slow", 0.01);
-  }, 4800);
-
-  setTimeout(function() {
-    $("#32").fadeTo("slow", 0.01);
-  }, 4900);
-
-  setTimeout(function() {
-    $("#44").fadeTo("slow", 0.01);
-  }, 5000);
-
-  setTimeout(function() {
-    $("#3").fadeTo("slow", 0.01);
-  }, 7700);
-
-  setTimeout(function() {
-    $("#20").fadeTo("slow", 0.01);
-  }, 7700);
+  }, 650);
 
   setTimeout(function() {
     $("#39").fadeTo("slow", 0.01);
-  }, 5100);
+  }, 730);
 
   setTimeout(function() {
-    $("#43").fadeTo("slow", 0.01);
-  }, 5200);
+    $("#40").fadeTo("slow", 0.01);
+  }, 810);
 
   setTimeout(function() {
-    $("#13").fadeTo("slow", 0.01);
-  }, 5300);
+    $("#41").fadeTo("slow", 0.01);
+  }, 890);
 
   setTimeout(function() {
-    $("#20").fadeTo("slow", 0.01);
-  }, 5400);
-
-  setTimeout(function() {
-    $("#18").fadeTo("slow", 0.01);
-  }, 5500);
+    $("#42").fadeTo("slow", 0.01);
+  }, 970);
 
   setTimeout(function() {
     $("#36").fadeTo("slow", 0.01);
-  }, 5600);
+  }, 1050);
 
+  setTimeout(function() {
+    $("#30").fadeTo("slow", 0.01);
+  }, 1130);
+
+  setTimeout(function() {
+    $("#24").fadeTo("slow", 0.01);
+  }, 1210);
+
+  setTimeout(function() {
+    $("#18").fadeTo("slow", 0.01);
+  }, 1290);
+
+  setTimeout(function() {
+    $("#17").fadeTo("slow", 0.01);
+  }, 1370);
+
+  setTimeout(function() {
+    $("#16").fadeTo("slow", 0.01);
+  }, 1450);
+/*
+  setTimeout(function() {
+    $("#15").fadeTo("slow", 0.01);
+  }, 1530);
+*/
+  setTimeout(function() {
+    $("#9").fadeTo("slow", 0.01);
+  }, 1610);
+
+  setTimeout(function() {
+    $("#8").fadeTo("slow", 0.01);
+  }, 1690);
+
+  setTimeout(function() {
+    $("#14").fadeTo("slow", 0.01);
+  }, 1750);
+
+  setTimeout(function() {
+    $("#20").fadeTo("slow", 0.01);
+  }, 1810);
+
+  setTimeout(function() {
+    $("#26").fadeTo("slow", 0.01);
+  }, 1870);
+
+  setTimeout(function() {
+    $("#32").fadeTo("slow", 0.01);
+  }, 1930);
+
+  setTimeout(function() {
+    $("#38").fadeTo("slow", 0.01);
+  }, 1990);
+
+  setTimeout(function() {
+    $("#44").fadeTo("slow", 0.01);
+  }, 2050);
+
+  setTimeout(function() {
+    $("#43").fadeTo("slow", 0.01);
+  }, 2110);
+
+  setTimeout(function() {
+    $("#45").fadeTo("slow", 0.01);
+  }, 2170);
+
+  setTimeout(function() {
+    $("#46").fadeTo("slow", 0.01);
+  }, 2230);
+
+  setTimeout(function() {
+    $("#37").fadeTo("slow", 0.01);
+  }, 2290);
+
+  setTimeout(function() {
+    $("#47").fadeTo("slow", 0.01);
+  }, 2350);
+
+  setTimeout(function() {
+    $("#31").fadeTo("slow", 0.01);
+  }, 2410);
+
+  setTimeout(function() {
+    $("#48").fadeTo("slow", 0.01);
+  }, 2470);
+
+  setTimeout(function() {
+    $("#25").fadeTo("slow", 0.01);
+  }, 2530);
+
+  setTimeout(function() {
+    $("#19").fadeTo("slow", 0.01);
+  }, 2590);
+
+  setTimeout(function() {
+    $("#13").fadeTo("slow", 0.01);
+  }, 2650);
+/*
+  setTimeout(function() {
+    $("#7").fadeTo("slow", 0.01);
+  }, 2710);
+*/
+  setTimeout(function() {
+    $("#1").fadeTo("slow", 0.01);
+  }, 2770);
+
+  setTimeout(function() {
+    $("#2").fadeTo("slow", 0.01);
+  }, 2830);
+
+  setTimeout(function() {
+    $("#3").fadeTo("slow", 0.01);
+  }, 2890);
+
+  setTimeout(function() {
+    $("#4").fadeTo("slow", 0.01);
+  }, 2950);
+
+  setTimeout(function() {
+    $("#5").fadeTo("slow", 0.01);
+  }, 3010);
+
+  setTimeout(function() {
+    $("#10").fadeTo("slow", 0.01);
+  }, 3070);
+
+  setTimeout(function() {
+    $("#6").fadeTo("slow", 0.01);
+  }, 3130);
+
+  setTimeout(function() {
+    $("#11").fadeTo("slow", 0.01);
+  }, 3190);
+/*
+  setTimeout(function() {
+    $("#12").fadeTo("slow", 0.01);
+  }, 3250);
+*/
   // Fade in yellow boxes with links to project pages.
   setTimeout(function() {
     $("#15").html('<a href="web"><h4 id="web">Web<br>Projects</h4></a>');
@@ -244,23 +256,7 @@ $(document).ready(function() {
     $("#video").fadeTo("slow", 1);
     $("#illustration").fadeTo("slow", 1);
     $("#web").fadeTo("slow", 1);
-  }, 5000);
-
-  setTimeout(function() {
-    $("#45").fadeTo("slow", 0.01);
-  }, 5600);
-
-  setTimeout(function() {
-    $("#45").fadeTo("slow", 0.01);
-  }, 5700);
-
-  setTimeout(function() {
-    $("#3").fadeTo("slow", 0.01);
-  }, 5800);
-
-  setTimeout(function() {
-    $("#46").fadeTo("slow", 0.01);
-  }, 5900);
+  }, 3100);
 
   // Hover if non-touch device
   $(".v,.u,.w,.x,.y,.z").hover(
