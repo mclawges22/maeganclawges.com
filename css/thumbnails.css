@@ -60,8 +60,9 @@
 }
 
 .illustration .tn6 {
-  background: #ffffff url("../images/thumbnails/believe.png") no-repeat right top;
-  background-size: cover;
+  background: none;
+  box-shadow: none;
+  border: none;
 }
 
 .web .tn4 {
@@ -181,6 +182,11 @@
 }
 .motion h5 b {
   font-weight: 400;
+}
+
+.invisible {
+  background-color: #fff;
+  border: none;
 }
 
 
