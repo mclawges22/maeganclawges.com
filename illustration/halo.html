@@ -8,19 +8,18 @@
   <meta name="author" content="Maegan Clawges">
   <link rel="shortcut icon" href="../images/mc3.png">
 
-  <title>Illustration</title>
+  <title>Halo Portrait</title>
 
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700' rel='stylesheet' type='text/css'>
 
   <link href="../css/header.css" rel="stylesheet">
   <link href="../css/pages.css" rel="stylesheet">
-  <link href="../css/thumbnails.css" rel="stylesheet">
 </head>
 
 <body>
   <div id="header">
     <div class="toolbar">
-      <h5><a href="index.html">Maegan Clawges</a> &nbsp;
+      <h5><a href="../index.html">Maegan Clawges</a> &nbsp;
         <b>data visualization engineer and designer</b>
       </h5>
       <div class="right">
@@ -49,89 +48,22 @@
     <img id="initials" src="../images/mc3.png">
     <h2 class="menu-desktop"><a href="../web">Web projects</a></h2>
     <h2 class="menu-mobile"><a href="../web">Web</a></h2>
-    <h2><a class="active" href="#">Illustration</a></h2>
+    <h2><a href="index.html">Illustration</a></h2>
     <h2 class="menu-desktop"><a href="../motion">Motion/Video</a></h2>
     <h2 class="menu-mobile"><a href="../motion">Motion</a></h2>
     <h2><a href="../web/pearlhacks.html">Pearl Hacks</a></h2>
   </div>
 
-  <div class="main illustration">
-    <h1>Illustration and Branding</h1>
-    <h2>Click a thumbnail to see the full image and a brief explanation.</h2>
-    <div class="images">
-      <div class="thumbnail tn1"></div>
-      <div class="thumbnail tn2"></div>
-      <div class="thumbnail tn3"></div>
-      <div class="thumbnail tn4"></div>
-      <div class="thumbnail tn5"></div>
-      <div class="thumbnail tn7"></div>
-      <div class="thumbnail tn8"></div>
-      <div class="thumbnail tn9"></div>
-      <div class="thumbnail tn10"></div>
-      <div class="thumbnail tn6"></div>
-      <div class="thumbnail tn11"></div>
-    </div>
-    <div class="overlay-wrapper">
-      <a href="rose.html"><div class="overlay o1">
-        <h4>Petals of Color</h4>
-        <h6>colored pencil</h6>
-      </div></a>
-      <a href="scarlet.html"><div class="overlay o2">
-        <h4><i>The Scarlet Letter</i> symbolism</h4>
-        <h6>colored pencil</h6>
-      </div></a>
-      <a href="janus.html"><div class="overlay o3">
-        <h4>Janus, the two-faced god of transitions</h4>
-        <h6>colored pencil</h6>
-      </div></a>
-      <a href="boxportrait.html"><div class="overlay o4">
-        <h4>Colored Dimensions</h4>
-        <h6>colored pencil / graphite</h6>
-      </div></a>
-      <a href="amy.html"><div class="overlay o5">
-        <h4>Personal branding for social media</h4>
-        <h6>ink</h6>
-      </div></a>
-      <a href="garden.html"><div class="overlay o7">
-        <h4>T-shirt design for community garden</h4>
-        <h6>colored pencil</h6>
-      </div></a>
-      <a href="portrait.html"><div class="overlay o8">
-        <h4>Portrait</h4>
-        <h6>colored pencil</h6>
-      </div></a>
-      <a href="boxout.html"><div class="overlay o9">
-        <h4>T-shirt design for a charity event</h4>
-        <h6>digital</h6>
-      </div></a>
-      <a href="halo.html"><div class="overlay o10">
-        <h4>Halo portrait</h4>
-        <h6>graphite</h6>
-      </div></a>
-      <div class="overlay invisible">
+	<img class="portrait" src="../images/halo.jpg">
 
-      </div>
-      <a href="broken.html"><div class="overlay o11">
-        <h4>Broken</h4>
-        <h6>paint</h6>
-      </div></a>
-    </div>
-  </div>
-
-  <script src="../js/jquery_v1.11.1.js"></script>
+	<script src="../js/jquery_v1.11.1.js"></script>
+  <script src="../js/helper.js"></script>
 
   <script>
   $(document).ready(function() {
-    var tnWidth = $(".tn1").width();
-    $(".thumbnail").css("height", tnWidth);
-    $(".overlay").css("height", tnWidth);
-
-    $(window).resize(function() {
-      tnWidth = $(".tn1").width();
-      $(".thumbnail").css("height", tnWidth);
-      $(".overlay").css("height", tnWidth);
-    });
+    size();
   });
   </script>
+
 </body>
 </html>
