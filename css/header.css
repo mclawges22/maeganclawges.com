@@ -1,0 +1,225 @@
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.20);
+}
+
+.toolbar {
+  margin-left: 8%;
+}
+
+	.toolbar h5 {
+    color: #652d90;
+    float: left;
+		margin-top: 10px;
+    font-size: 18px;
+		margin-bottom: 5px;
+    font-weight: 400;
+	}
+  .toolbar h5 a {
+    opacity: .6;
+    transition: opacity .6s ease-out;
+    -moz-transition: opacity .6s ease-out;
+    -webkit-transition: opacity .6s ease-out;
+    -o-transition: opacity .6s ease-out;
+  }
+
+    .toolbar h5 a:hover {
+      opacity: 1;
+    }
+
+		.toolbar h5 b {
+			font-weight: 300;
+			font-size: 16px;
+			color: #b397c7;
+		}
+
+	.toolbar .right {
+    margin: 0 8% 0 0;
+    float: right;
+  }
+
+	.toolbar a {
+		text-decoration: none;
+	}
+
+		.toolbar .right a {
+      float: right;
+      margin: 8px 9px;
+    }
+
+      #github {
+        margin-top: -1;
+      }
+
+			.toolbar .right #resume h2 {
+				font-size: 17px;
+				font-weight: 300;
+        margin: 4px 0;
+        color: #652d90;
+        opacity: .5;
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+        -o-transition: opacity .5s ease-out;
+			}
+
+        .toolbar .right #resume:hover h2 {
+          opacity: 1;
+        }
+
+      .toolbar .right a svg .social {
+        fill: #652d90;
+        opacity: .5;
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+        -o-transition: opacity .5s ease-out;
+			}
+
+      	.toolbar .right a svg:hover .social {
+  		    opacity: 1;
+  		  }
+
+  #menu {
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 40px;
+    height: 22px;
+    margin-left: 8%;
+    background-color: #FFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.20);
+  }
+
+    #initials {
+    	display: none;
+    	height: 20px;
+    	margin: 1px 0;
+      padding: 0 12px;
+    	float: left;
+    }
+
+    #menu h2 {
+      float:left;
+      position:relative;
+      margin:0;
+      font-size:14px;
+      margin: 2px 0;
+      padding: 0 12px;
+      border-right: 1px solid #b397c7;
+    }
+
+      #menu h2:last-child {
+        border: none;
+      }
+
+    #menu a {
+      text-decoration: none;
+      color: #652d90;
+      opacity: .5;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+      font-weight: 300;
+    }
+
+      #menu a:hover {
+        opacity: 1;
+      }
+
+  .menu-mobile {
+  	display: none;
+  }
+
+  .menu-desktop {
+  	display:block;
+  }
+
+/* Make it responsive */
+
+@media only screen and (max-width: 960px) {
+  .toolbar {
+    margin-left: 6%;
+  }
+  .toolbar .right {
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .toolbar {
+    margin-left: 4%;
+  }
+  .toolbar .right {
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .toolbar {
+    margin-left: 3%;
+  }
+  .toolbar .right {
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #linkedin {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .toolbar h5 {
+    margin-top: 10.5px;
+    font-size: 17px;
+  }
+  .toolbar h5 b {
+    font-size: 15px;
+  }
+  .toolbar .right #resume h2 {
+    font-size: 16px;
+    margin-left: -3px;
+  }
+  #twitter, #github {
+    width: 20px;
+    height: 20px;
+    margin: 3px -3px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .toolbar {
+    margin-left: 8%;
+  }
+  .toolbar .right {
+    margin-right: 7%;
+  }
+  .toolbar h5 {
+    opacity: .7;
+  }
+  .toolbar h5 b {
+    display: none;
+  }
+  #linkedin {
+    display: block;
+  }
+  #linkedin svg {
+    width: 20px;
+    height: 20px;
+    margin: 3px -3px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #linkedin {
+    display: none;
+  }
+}

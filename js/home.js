@@ -2,11 +2,11 @@ $(document).ready(function() {
   // Sizing the portrait based on initial size of window.
   var height = $(window).height();
   var width = $(window).width();
-  $(".main").css("height", height - 40);
-  $(".portrait").css("height", height - 40);
 
   // Mobile v. Desktop treatment
   if (width > 450) {
+    $(".main").css("height", height - 40);
+    $(".portrait").css("height", height - 40);
     var portraitWidth = (height - 40) * .7466307277;
     var margins = (width - portraitWidth) / 2;
 
@@ -19,6 +19,8 @@ $(document).ready(function() {
   } else {
     $(".portrait").css("padding-left", "0");
     $(".portrait").css("padding-right", "0");
+    $(".portrait").css("width", width);
+    $(".main").css("height", $(".portrait").height());
     $(".row").css("margin-left", "0");
     $(".row").css("margin-right", "0");
     $(".row").css("width", $(".portrait").width());
@@ -29,24 +31,29 @@ $(document).ready(function() {
     var height = $(window).height();
     var width = $(window).width();
 
-    if (width > 450) {
+    if (width > (height - 40) * .7466307277) {
       $(".main").css("height", height - 40);
       $(".portrait").css("height", height - 40);
-
-      var portraitWidth = $(".portrait").width();
+      var portraitHeight = height - 40;
+      var portraitWidth = portraitHeight * .7466307277;
       var margins = (width - portraitWidth) / 2;
 
       $(".portrait").css("padding-left", margins);
       $(".portrait").css("padding-right", margins);
+      $(".portrait").css("width", portraitWidth);
+      $(".portrait").css("height", portraitHeight);
+      $(".main").css("height", portraitHeight);
       $(".row").css("margin-left", margins);
       $(".row").css("margin-right", margins);
       $(".row").css("width", portraitWidth);
 
     } else {
-      $(".main").css("height", height-40);
-      $(".portrait").css("height", height-40);
+      var portraitHeight = width / .7466307277;
       $(".portrait").css("padding-left", "0");
       $(".portrait").css("padding-right", "0");
+      $(".portrait").css("width", width);
+      $(".portrait").css("height", portraitHeight);
+      $(".main").css("height", portraitHeight);
       $(".row").css("margin-left", "0");
       $(".row").css("margin-right", "0");
       $(".row").css("width", $(".portrait").width());
@@ -249,13 +256,13 @@ $(document).ready(function() {
   // Fade in yellow boxes with links to project pages.
   setTimeout(function() {
     $("#15").html('<a href="web"><h4 id="web">Web<br>Projects</h4></a>');
-    $("#7").html('<a href="illustration"><h4 id="illustration">Illustration and<br>Branding</h4></a>');
-    $("#23").html('<a href="motion"><h4 id="video">Motion<br>Graphics /<br>Videography</h4></a>');
+    $("#7").html('<a href="illustration"><h4 id="illustration">Art and<br>Branding</h4></a>');
+    $("#23").html('<a href="motion"><h4 id="video">Motion and<br>Video</h4></a>');
     $("#12").html('<a href="web/pearlhacks.html"><h4 id="pearl-hacks">Pearl<br>Hacks</h4></a>');
-    $("#pearl-hacks").fadeTo("slow", 1);
-    $("#video").fadeTo("slow", 1);
-    $("#illustration").fadeTo("slow", 1);
-    $("#web").fadeTo("slow", 1);
+    $("#pearl-hacks").fadeTo("slow", .7);
+    $("#video").fadeTo("slow", .7);
+    $("#illustration").fadeTo("slow", .7);
+    $("#web").fadeTo("slow", .7);
   }, 3100);
 
   // Hover if non-touch device
@@ -267,12 +274,12 @@ $(document).ready(function() {
       // Make sure yellow boxes with links to pages never disappear.
       if (!(this.getAttribute('id') == 7 || this.getAttribute('id') == 15 || this.getAttribute('id') == 23 || this.getAttribute('id') == 12)) {
         $(this).fadeTo("slow", 0.01);
-        $("#7").css("opacity",".9");
-        $("#15").css("opacity",".9");
-        $("#23").css("opacity",".9");
-        $("#12").css("opacity",".9");
+        $("#7").css("opacity",".7");
+        $("#15").css("opacity",".7");
+        $("#23").css("opacity",".7");
+        $("#12").css("opacity",".7");
       } else {
-        $(this).css("opacity",".9");
+        $(this).css("opacity",".7");
       }
     }
   );
