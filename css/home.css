@@ -141,6 +141,10 @@ a, a:hover {
 	text-decoration: none;
 }
 
+a:active {
+  color: rgba(105, 105, 105, 1);
+}
+
 .c .w:hover, .b .u:hover, .b .z:hover, .d .y:hover {
 	background-color: rgba(249, 240, 11, .4);
 }

@@ -4,7 +4,7 @@ $(document).ready(function() {
   var width = $(window).width();
 
   // Mobile v. Desktop treatment
-  if (width > 450) {
+  if (width > (height - 40) * .7466307277) {
     $(".main").css("height", height - 40);
     $(".portrait").css("height", height - 40);
     var portraitWidth = (height - 40) * .7466307277;

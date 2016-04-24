@@ -28,6 +28,7 @@ body {
 .main img {
     width:100%;
     margin: 25px 0;
+
 }
 .main .half-img {
     width:40%;
@@ -161,32 +162,27 @@ li {
   position: absolute;
   z-index:10;
   padding: 20px 40px;
-  height: 80px;
   bottom: 0;
 }
-
-.janus {
-	height: 200px;
-}
-
-.scarlet {
-	height: 120px;
-}
-
 .overlay-full h2 {
   color: #FFF;
 }
 .overlay-full h4 {
   font-weight:300;
-	line-height: 1.4em;
+	line-height: 1.5em;
   color:#FFF;
+	font-size: 14px;
 }
 .overlay-full h4 a {
   color: #FFF;
   text-decoration: none;
+	font-weight: 300;
 }
 .overlay-full h4 a:hover {
   text-decoration: underline;
+}
+.overlay-full i {
+	opacity: .6;
 }
 
 /* Make it responsive */
@@ -244,6 +240,21 @@ li {
 	#initials {
 		display: block;
 	}
+	.portrait {
+		position: relative;
+	}
+	.overlay-full {
+	  background-color: #fff;
+	  opacity: 1;
+		margin-top: -4px;
+	  position: relative;
+	  z-index:10;
+	  padding: 20px 40px;
+	}
+
+	.overlay-full h2, .overlay-full h4, .overlay-full h4 a {
+		color: #652d90;
+	}
 }
 @media only screen and (max-width: 500px) {
 	#menu {
@@ -258,7 +269,7 @@ li {
 	.menu-desktop {
 		display:none;
 	}
-    
+
     .portrait {
         width:100%;
         padding:0;
