@@ -8,18 +8,19 @@
   <meta name="author" content="Maegan Clawges">
   <link rel="shortcut icon" href="../images/mc3.png">
 
-  <title>Colored Box Portrait</title>
+  <title>Motion / Video</title>
 
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700italic,700' rel='stylesheet' type='text/css'>
 
   <link href="../css/header.css" rel="stylesheet">
   <link href="../css/pages.css" rel="stylesheet">
+  <link href="../css/thumbnails.css" rel="stylesheet">
 </head>
 
 <body>
   <div id="header">
     <div class="toolbar">
-      <h5><a href="../index.html">Maegan Clawges</a> &nbsp;
+      <h5><a href="../">Maegan Clawges</a> &nbsp;
         <b>data visualization engineer and designer</b>
       </h5>
       <div class="right">
@@ -48,34 +49,52 @@
     <img id="initials" src="../images/mc3.png">
     <h2 class="menu-desktop"><a href="../web">Web projects</a></h2>
     <h2 class="menu-mobile"><a href="../web">Web</a></h2>
-    <h2><a href="index.html">Illustration</a></h2>
-    <h2 class="menu-desktop"><a href="../motion">Motion/Video</a></h2>
-    <h2 class="menu-mobile"><a href="../motion">Motion</a></h2>
+    <h2><a href="../illustration">Illustration</a></h2>
+    <h2 class="menu-desktop"><a class="active" href="#">Motion/Video</a></h2>
+    <h2 class="menu-mobile"><a class="active" href="#">Motion</a></h2>
     <h2><a href="../web/pearlhacks.html">Pearl Hacks</a></h2>
   </div>
 
-	<img class="portrait" src="../images/smallboxportrait.png">
-	<div class="overlay-full janus">
-		<h2>Colored Dimensions</h2>
-	  <h4>I drew this portrait in graphite first. I made a photo copy and added
-      the colored layer to it so that the graphite would provide a consistent
-      base, but not smudge. There was a considerable amount of logic around
-      color placement so that no pattern would emerge. I also thoguht a lot
-      about the dimensions of the grid so that the box lines would fall in
-      certain places and not, say, right over the iris. <i>This piece was not
-      altered digitally.</i>
-    </h4>
+  <div class="main motion">
+    <h1>Motion Graphics and Video Editing</h1>
+    <h2><a href="http://pearlhacks.com/2015">Pearl Hacks</a> promo video</h2>
+
+    <h5><b>Goal:</b> &nbsp;Introduce people to "hacking" in the context of a
+      university hackathon. Make it less intimidating and more inclusive.</h5>
+    <iframe class="video" src="https://www.youtube.com/embed/16b_O6ntZno?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    <h2>Welcome to <a href="pearlhacks.html">Pearl Hacks</a></h2>
+    <h5><b>Goal:</b> &nbsp;Something fun and flashy to show at the opening ceremony.</h5>
+    <iframe class="video" src="https://www.youtube.com/embed/aycrJErYfjs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    <h2>Lyric video for "Superheroes" by The Script</h2>
+    <h5><b>Goal:</b> &nbsp;Practice various motion design techniques for class.</h5>
+    <iframe class="video" src="https://www.youtube.com/embed/tMF4LukafWw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    <h2><a href="http://hacknc.com">HackNC</a> promo video</h2>
+    <h5><b>Goal:</b> &nbsp;Introduce the organizing team to participants, and show
+      shots of the UNC-Chapel Hill campus.</h5>
+    <iframe class="video" src="https://www.youtube.com/embed/PtJmm925-bw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    <h2>A day at <a href="https://hickorynutgapfarm.com">Hickory Nut Gap Farm</a></h2>
+    <h5><b>Goal:</b> &nbsp;Document the philosophies behind growing food and
+      people at this local farm.</h5>
+    <iframe class="video" src="https://www.youtube.com/embed/W8kaj_dYII0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+    <h5>View more on my <a href="https://www.youtube.com/user/segwalk22/videos" target="_blank">Youtube channel</a>.</h5>
   </div>
 
-	<script src="../js/jquery_v1.11.1.js"></script>
-  <script src="../js/helper.js"></script>
+  <script src="../js/jquery_v1.11.1.js"></script>
 
   <script>
   $(document).ready(function() {
-    size();
-    initPortraitOverlay();
+    var videoWidth = $(".video").width();
+    $(".video").css("height", videoWidth * .5625);
+    $( window ).resize(function() {
+      videoWidth = $(".video").width();
+      $(".video").css("height", videoWidth * .5625);
+    });
   });
   </script>
-
 </body>
 </html>

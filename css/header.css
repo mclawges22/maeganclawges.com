@@ -134,6 +134,11 @@
         opacity: 1;
       }
 
+      #menu .active {
+        font-weight: 400;
+        opacity: 1;
+      }
+
   .menu-mobile {
   	display: none;
   }
