@@ -1,7 +1,7 @@
 /*****CSS Stylesheet for internal pages of Maegan Clawges's Portfolio Site*****/
 /***********    By Maegan Clawges, please do not replicate    ************/
 
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1, h2, h3, h4, h5, h6, a {
 	font-family: Roboto;
 	font-weight: 400;
 }
@@ -21,6 +21,14 @@ h1, h2, h3, h4, h5, h6, p, a, li {
         font-size:25px;
         color:#000;
     }
+		p, li {
+			font-family: Roboto;
+			font-weight: 300;
+			line-height: 1.4em;
+		}
+		li {
+			margin-top: 10px;
+		}
 body {
   color: #494949;
   margin: 0;
@@ -87,8 +95,9 @@ body {
     .main p {
         width:76%;
         margin:20px 12%;
-        font-size:15px;
-        font-weight: 400;
+        font-size:16px;
+        font-weight: 300;
+				line-height: 1.4em;
     }
     .main .note {
         font-style: italic;
@@ -103,9 +112,7 @@ body {
     font-size: 18px;
     color:#652d90;
 }
-li {
-  font-weight: 400;
-}
+
 .main .intro{
   width:76%;
   margin:20px 12%;
