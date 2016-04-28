@@ -5,157 +5,170 @@ h1, h2, h3, h4, h5, h6, a {
 	font-family: Roboto;
 	font-weight: 400;
 }
-    h1 {
-        font-size:45px;
-        text-align: center;
-    }
 
-    h2 {
-        margin:0;
-        text-align: center;
-        font-weight:400;
-        font-size: 24px;
-				line-height: 1.3em;
-    }
-    h3 {
-        font-size:25px;
-        color:#000;
-    }
-		p, li {
-			font-family: Roboto;
-			font-weight: 300;
-			line-height: 1.4em;
-		}
-		li {
-			margin-top: 10px;
-		}
+  h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+		line-height: 1.3em;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: #000;
+  }
+
+	p, li {
+		font-family: Roboto;
+		font-weight: 300;
+		line-height: 1.4em;
+	}
+
+	li {
+		margin-top: 10px;
+	}
+
 body {
   color: #494949;
   margin: 0;
 }
-.main img {
-    width:100%;
-    margin: 25px 0;
 
-}
-.main .half-img {
-    width:40%;
+	.main img {
+    width: 100%;
+    margin: 25px 0;
+	}
+
+	.main .half-img {
+    width: 40%;
     margin: 25px 5%;
-    float:left;
-}
+    float: left;
+	}
 
 .dark-purple {
-		margin-top: 40px;
-    color:#652d90;
+	margin-top: 40px;
+  color: #652d90;
 }
+
 .purple {
-    color:#b397c7;
-    text-align: left;
-    margin-left:-30px;
+  color: #b397c7;
+  text-align: left;
+  margin-left: -30px;
 }
 
 .main {
-    width:70%;
-    margin:100px 15%;
+  width: 70%;
+  margin: 100px 15%;
 }
-    .main a {
-        color:#652d90;
-        text-decoration: underline;
+	.main a {
+	  color: #652d90;
+	  text-decoration: none;
+	}
+
+    .main a:hover {
+      color: #b397c7;
     }
-        .main p a{
-            font-weight: 500;
-        }
-        .main .intro a{
-            font-weight: 500;
-        }
-        .main a:hover {
-            color:#b397c7;
-        }
+
     .main h1 a, .main .button-link {
-        text-decoration: none;
+      text-decoration: none;
     }
-        .main h1 a:hover, .main .button-link {
-            text-decoration: none;
-        }
+
+    .main h1 a:hover, .main .button-link {
+      text-decoration: none;
+    }
+
     .main a .button {
-        padding:8px 0;
-        margin:10px auto;
-        border-radius:20px;
-        background-color:#652d90;
-        text-align: center;
-        color:#fff;
-        width: 240px;
-        font-size:18px;
-        z-index:-100;
-        font-weight:400;
+      padding: 8px 0;
+      margin: 10px auto;
+      border-radius: 20px;
+      background-color: #652d90;
+      text-align: center;
+      color: #fff;
+      width: 240px;
+      font-size: 18px;
+      z-index: -100;
+      font-weight: 400;
     }
-        .main a .button:hover {
-            background:#b397c7;
-        }
-    .main p {
-        width:76%;
-        margin:20px 12%;
-        font-size:16px;
-        font-weight: 300;
-				line-height: 1.4em;
-    }
+
+      .main a .button:hover {
+        background:#b397c7;
+      }
+
+  .main p {
+    width: 76%;
+    margin: 20px 12%;
+    font-size: 16px;
+    font-weight: 300;
+		line-height: 1.4em;
+  }
     .main .note {
-        font-style: italic;
-        color:#666;
-        font-size: 14px;
+      font-style: italic;
+      color: #666;
+      font-size: 14px;
     }
 
-.main h2 a {
-    text-decoration: none;
-}
-.highlight{
-    font-size: 18px;
-    color:#652d90;
-}
+		.main h2 a {
+		  text-decoration: none;
+		}
 
-.main .intro{
-  width:76%;
-  margin:20px 12%;
-}
-.main .dth-box {
-    width:100%;
-    height:750px;
-}
-.main .dth-box2 {
-    width:100%;
-    height:650px;
-}
-.payday-loan-graphic {
-    float:left;
-    width:60%;
-    margin-right:30px
-}
-.homecoming {
-    width:70%;
-    float:right;
-    margin-left:30px
-}
+	.highlight {
+    font-size: 18px;
+    color: #652d90;
+	}
+
+	.main .intro {
+	  width: 76%;
+	  margin: 20px 12%;
+	}
+
+	.main .dth-box {
+    width: 100%;
+    height: 750px;
+	}
+
+	.main .dth-box2 {
+    width: 100%;
+    height: 650px;
+	}
+
+	.payday-loan-graphic {
+    float: left;
+    width: 60%;
+    margin-right: 30px;
+	}
+
+	.homecoming {
+    width: 70%;
+    float: right;
+    margin-left: 30px;
+	}
 
 .web, .illustration, .motion {
-  width:80%;
-  margin:120px 10%;
+  width: 80%;
+  margin: 120px 10%;
 }
 
 .web h1, .illustration h1, .motion h1 {
   margin-bottom: 10px;
-  color:#652d90;
+  color: #652d90;
 }
 
 .web h2, .illustration h2 {
   margin-bottom: 20px;
   color: #757575;
-  font-weight:400;
+  font-weight: 400;
+	opacity: .7;
 }
 
 .motion h2 {
   margin-top: 60px;
   color: #757575;
-  font-weight:300;
+  font-weight: 300;
   font-size: 36px;
 }
 
@@ -163,80 +176,101 @@ body {
   position: absolute;
   z-index:-10;
 }
+
 .overlay-full {
   background-color: #212121;
   opacity: .001;
   position: absolute;
-  z-index:10;
+  z-index: 10;
   padding: 20px 40px;
   bottom: 0;
 }
+
 .overlay-full h2 {
   color: #FFF;
 }
+
 .overlay-full h4 {
-  font-weight:300;
+  font-weight: 300;
 	line-height: 1.5em;
-  color:#FFF;
+  color: #FFF;
 	font-size: 14px;
 }
+
 .overlay-full h4 a {
   color: #FFF;
   text-decoration: none;
 	font-weight: 300;
 }
+
 .overlay-full h4 a:hover {
   text-decoration: underline;
 }
+
 .overlay-full i {
 	opacity: .6;
+}
+
+.video {
+  width: 70%;
+  margin: 20px 15%;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.20);
+  border: 1px solid #b397c7;
+}
+
+.motion h5 {
+  width: 70%;
+  margin: 20px 15%;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.motion h5 b {
+  font-weight: 400;
 }
 
 /* Make it responsive */
 @media only screen and (max-width: 1000px) {
     .main .dth-box {
-        height:560px;
+        height: 560px;
     }
     .main .dth-box2 {
-        height:480px;
+        height: 480px;
     }
 }
-@media only screen and (max-width: 870px) {
 
+@media only screen and (max-width: 870px) {
     .main .dth-box {
         height:480px;
     }
-
 }
 
 @media only screen and (max-width: 645px) {
-
     .main {
-        width:80%;
-        margin:80px 10%;
+        width: 80%;
+        margin: 80px 10%;
     }
     .dark-purple {
-        margin-left:0px;
+        margin-left: 0px;
     }
     .main a .button {
-        padding:10px 0;
-        margin:0 -5%;
-        width:110%;
-        font-size:16px;
+        padding: 10px 0;
+        margin: 0 -5%;
+        width: 110%;
+        font-size: 16px;
     }
     .payday-loan-graphic, .homecoming {
-        width:100%;
-
+        width: 100%;
     }
-
     .main .dth-box {
-        height:880px;
+        height: 880px;
     }
     .main .dth-box2 {
-        height:700px;
+        height: 700px;
     }
-
 }
+
 @media only screen and (max-width: 585px) {
 	#header {
 		display: none;
@@ -255,84 +289,131 @@ body {
 	  opacity: 1;
 		margin-top: -4px;
 	  position: relative;
-	  z-index:10;
+	  z-index: 10;
 	  padding: 20px 40px;
 	}
-
 	.overlay-full h2, .overlay-full h4, .overlay-full h4 a {
 		color: #652d90;
 	}
+	.motion h2 {
+		font-size: 26px;
+	}
+	.motion h5 {
+		font-size: 16px;
+	}
 }
+
 @media only screen and (max-width: 500px) {
 	#menu {
-		margin-left:3%;
+		margin-left: 3%;
 	}
-
+	.web h2, .illustration h2 {
+	  font-size: 16px;
+	}
 }
 @media only screen and (max-width: 460px) {
 	.menu-mobile {
 		display: block;
 	}
 	.menu-desktop {
-		display:none;
+		display: none;
 	}
-
-    .portrait {
-        width:100%;
-        padding:0;
-    }
-    h4 {
-        padding-top:3%;
-        font-size: 11px;
-        line-height: 1em;
-    }
-    h1 {
-        font-size:32px;
-    }
-    h2 {
-        font-size: 20px;
-    }
+  .portrait {
+      width:100%;
+      padding:0;
+  }
+  h4 {
+      padding-top:3%;
+      font-size: 11px;
+      line-height: 1em;
+  }
+  h1 {
+      font-size:32px;
+  }
+	.motion h2 {
+		font-size: 24px;
+		width: 84%;
+		margin: 0 8%;
+		margin-top: 30px;
+	}
+	.motion h5 {
+		width: 80%;
+		margin: 20px 10%;
+	}
+	.video {
+	  width:90%;
+	  margin: 10px 5%;
+	}
+	h2 {
+    font-size: 20px;
+	}
+	.main p, .main .intro-text, .main .intro {
+		width: 90%;
+  	margin: 20px 5%;
+		font-size: 14px;
+	}
+	ul {
+		padding:0 10%;
+	}
+	ol {
+		margin:0;
+		font-size: 14px;
+	}
+	.links {
+		list-style-type:disc;
+	}
+	.main ol img {
+		width: 130%;
+	  margin-left: -22.5%;
+	}
 }
-
 
 ul {
-	padding:1%;
+	padding: 1%;
 }
+
 ol {
-	margin:0 2%;
+	margin: 0 2%;
 }
+
 .links {
-	list-style-type:disc;
+	list-style-type: disc;
 }
 
 .ms-pm li {
-	margin:0 15%;
+	margin: 0 15%;
 }
+
 .ms-test {
-    margin-left:0;
+  margin-left: 0;
 }
+
 .ms-test li {
-	margin:0 8%;
+	margin: 0 8%;
 }
+
 .ms-dev {
-	font-size:1.2em;
-	margin:0 7%;
-	color:#652d90;
+	font-size: 1.2em;
+	margin: 0 7%;
+	color: #652d90;
 }
 
 #culturalUX {
-    width:94%;
-    margin:3%;
+  width: 94%;
+  margin: 3%;
 }
+
 .ph1 {
-    top:0;
-    width:100%;
-    padding:0 9%;
-    z-index:50;
+  top: 0;
+  width: 100%;
+  padding: 0 9%;
+  z-index: 50;
 }
-    .main .dth-box {
-        height:800px;
-    }
-    .main .dth-box2 {
-        height:590px;
-    }
+
+.main .dth-box {
+  height: 800px;
+}
+
+.main .dth-box2 {
+  height: 590px;
+}

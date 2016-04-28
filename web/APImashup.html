@@ -58,25 +58,22 @@
     <h1><a href="http://maeganclawges.com/static/final/api.php" target="_blank">
       Somewhere Over The Rainbow</a>
     </h1>
-    <h2>An API Mashup</h2>
+    <h2>A city exploration experience</h2>
 
-    <p>I began this project as an individual entry at a hackathon two weeks ago.
-      In “Somewhere Over The Rainbow” I create a user interface for people
-      researching places they might want to move to or visit. My main goal was
-      to bring together data from a variety of sites in a single user interface
-      to give the user an overall feel for the city without having to search
-      five different sites. Right now you can search for a city and the Google
+    <p>I began this project as an individual entry at <a href="http://hackduke.org">HackDuke</a> 2013.
+      It is a web app for people to research places they might want to move to or visit.
+      My main goal was to bring together data from social media and other data resources
+      in a single page to give the user an overall feel for a city without having to search
+      five different sites. You can search for a city and the Google
       GeoCode API will provide the latitude/longitude of the location to the
-      Google map API. I also use PHP to access the Twitter search API and stream
-      tweets including the hashtag for the city. An iframe loads in the “data”
-      tab with statistics about the quality of life and cost of living. Over the
-      next week I am going to add an photo stream from the Instagram search API.
-      The yellow “home” tab will feature the predicted weather for the selected
-      time of year from the Weather Channel’s API as well as a few tweets and
-      photos. The final part of the project will involve allowing users to create
-      accounts on my server and save their favorite searches to allow them to
-      easily track areas of interest. It has been a lot of fun learning to use
-      the Google maps/geocode API as well as the other APIs.</p>
+      Google Maps API. The yellow “home” tab features the predicted weather for
+      the selected time of year from the Weather Channel’s API as well as previews
+      of the other tabs. I use the Twitter and Instagram Search APIs to stream
+      posts including the hashtag for the city. The “data” tab loads statistics
+      about the quality of life, cost of living, and demographics of the city
+      from the U.S. Census.
+      Another version of this project allowed users to create accounts on my server
+      and save their favorite searches to track areas of interest.</p>
 
     <a href="http://maeganclawges.com/static/final/api.php" target="_blank" class="button-link">
       <h4 class="button">View the project live</h4></a>
@@ -88,10 +85,9 @@
     <p>I began the project with the concept of a large map filling the screen
       with the API data in some sort of overlaid container. I explored a variety
       of designs for organizing the data, such as side tabs, top tabs, separate
-      boxes for each type, etc. I also started out with a much more complex UI
-      representing the user in the top right corner. Then I realized that the
-      user did not really need all those options to achieve the goal so I
-      simplified the header. See below for my various iterations from sketching
+      boxes for each type, etc. I also started out with a much more complex format
+      for searching, but realized I could simplify it all with the GeoCode API.
+      See below for my various iterations from sketching
       to comp and then visit the
       <a href="http://maeganclawges.com/static/final/api.php">current site</a>.</p>
     <img src="../images/rainbowSketch.JPG">
@@ -103,13 +99,7 @@
       The Rainbow" because it lent itself to a lightweight and joyful color scheme
       that tied the page together. This is the design I made in Adobe Illustrator
       before I began to code. I used layers to show different states of the page
-      based on different user scenarios. At this stage I discovered another way
-      to simplify the UI - through the search flow. I originally planned to
-      overlay a window with advanced search options every time the user wanted a
-      new search. After adding it to my comp I realized that some of the options
-      I was going to offer were not necessary and others could be incorporated at
-      different spots in the UI. For example, the time of year selection that
-      controls the weather data.</p>
+      based on different user scenarios.</p>
     <img src="../images/SomewhereOverTheRainbow.png">
   </div>
 </body>
