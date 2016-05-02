@@ -1,0 +1,144 @@
+h1, h2, h3, h4, h5, h6, a {
+	font-family: Roboto;
+	font-weight: 400;
+}
+
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+		line-height: 1.3em;
+    padding-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: #000;
+  }
+
+	p, li {
+		font-family: Roboto;
+		font-weight: 300;
+		line-height: 1.4em;
+	}
+
+	li {
+		margin-top: 10px;
+	}
+
+body {
+  color: #494949;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  margin: 100px 0;
+}
+
+.collage img {
+  width: 20%;
+  float: left;
+  -webkit-filter: brightness(70%);
+  -webkit-transition: .8s all;
+}
+.collage img:hover {
+  -webkit-filter: brightness(100%);
+}
+.collage img:last-child {
+  margin-bottom: 80px;
+}
+
+#logo-collage {
+  margin-top: 50px;
+}
+#logo-collage img {
+  -webkit-filter: brightness(100%);
+}
+	.main a {
+	  color: #652d90;
+	  text-decoration: none;
+	}
+
+    .main a:hover {
+      color: #b397c7;
+    }
+
+    .main h1 a, .main .button-link {
+      text-decoration: none;
+    }
+
+    .main h1 a:hover, .main .button-link {
+      text-decoration: none;
+    }
+
+    .main a .button {
+      padding: 8px 0;
+      margin: 10px auto;
+      border-radius: 20px;
+      background-color: #652d90;
+      text-align: center;
+      color: #fff;
+      width: 240px;
+      font-size: 18px;
+      z-index: -100;
+      font-weight: 400;
+    }
+
+      .main a .button:hover {
+        background:#b397c7;
+      }
+
+.story-wrapper {
+  width: 60%;
+  margin: 0 20%;
+}
+.story-wrapper h2 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.3em;
+  padding: 20px 0;
+  color: #652d90;
+}
+.pearl-hacks-logo {
+  width: 40%;
+  margin: 50px -30px 0 30px;
+  float: right;
+}
+
+.events-2 {
+	width: 39%;
+  margin: 50px 5%;
+	vertical-align: middle;
+}
+
+#events-collage {
+	padding: 0 3%;
+}
+.collage .events-1 {
+	width: 25%;
+  margin: 50px 2%;
+	vertical-align: middle;
+	-webkit-filter: brightness(100%);
+}
+
+.collage .events-3 {
+	width: 40%;
+  margin: 100px 1%;
+	vertical-align: middle;
+	-webkit-filter: brightness(100%);
+}
+
+  .main p {
+    font-size: 16px;
+    font-weight: 300;
+		line-height: 1.4em;
+  }
