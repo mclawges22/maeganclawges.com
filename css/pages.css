@@ -75,8 +75,14 @@ body {
       color: #b397c7;
     }
 
+		.main p a:hover {
+      color: #652d90;
+			text-decoration: underline;
+    }
+
     .main h1 a, .main .button-link {
       text-decoration: none;
+			-webkit-transition: .4s all;
     }
 
     .main h1 a:hover, .main .button-link {
@@ -94,6 +100,7 @@ body {
       font-size: 18px;
       z-index: -100;
       font-weight: 400;
+			-webkit-transition: .4s all;
     }
 
       .main a .button:hover {
@@ -163,6 +170,7 @@ body {
   z-index: 10;
   padding: 20px 40px;
   bottom: 0;
+	-webkit-transition: .6s all;
 }
 
 .overlay-full h2 {

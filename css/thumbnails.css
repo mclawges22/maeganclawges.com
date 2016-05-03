@@ -131,6 +131,7 @@
   z-index: -10;
   border: 1px solid #212121;
   border-radius: 4px;
+  -webkit-transition: .4s all;
 }
 .overlay:hover {
   opacity: .9;
