@@ -43,102 +43,160 @@ body {
   margin: 100px 0;
 }
 
-.collage img {
-  width: 20%;
-  float: left;
-  -webkit-filter: brightness(70%);
-  -webkit-transition: .8s all;
-}
-.collage img:hover {
-  -webkit-filter: brightness(100%);
-}
-.collage img:last-child {
-  margin-bottom: 80px;
-}
-
-#logo-collage {
-  margin-top: 50px;
-}
-#logo-collage img {
-  -webkit-filter: brightness(100%);
-}
 	.main a {
-	  color: #652d90;
-	  text-decoration: none;
+		color: #652d90;
+		text-decoration: none;
 	}
 
-    .main a:hover {
-      color: #b397c7;
-    }
+		.main a:hover {
+			color: #b397c7;
+		}
 
-    .main h1 a, .main .button-link {
-      text-decoration: none;
-    }
-
-    .main h1 a:hover, .main .button-link {
-      text-decoration: none;
-    }
-
-    .main a .button {
-      padding: 8px 0;
-      margin: 10px auto;
-      border-radius: 20px;
-      background-color: #652d90;
-      text-align: center;
-      color: #fff;
-      width: 240px;
-      font-size: 18px;
-      z-index: -100;
-      font-weight: 400;
-    }
-
-      .main a .button:hover {
-        background:#b397c7;
-      }
+		.main h1 a:hover, .main .button-link {
+			text-decoration: none;
+		}
 
 .story-wrapper {
   width: 60%;
   margin: 0 20%;
 }
-.story-wrapper h2 {
-  text-align: left;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.3em;
-  padding: 20px 0;
-  color: #652d90;
-}
-.pearl-hacks-logo {
-  width: 40%;
-  margin: 50px -30px 0 30px;
-  float: right;
-}
 
-.events-2 {
-	width: 39%;
-  margin: 50px 5%;
-	vertical-align: middle;
-}
+	.story-wrapper h2 {
+	  text-align: left;
+	  font-weight: 400;
+	  font-size: 40px;
+	  line-height: 1.3em;
+	  padding: 20px 0;
+	  color: #652d90;
+	}
 
-#events-collage {
-	padding: 0 3%;
-}
-.collage .events-1 {
-	width: 25%;
-  margin: 50px 2%;
-	vertical-align: middle;
-	-webkit-filter: brightness(100%);
-}
-
-.collage .events-3 {
-	width: 40%;
-  margin: 100px 1%;
-	vertical-align: middle;
-	-webkit-filter: brightness(100%);
-}
-
-  .main p {
+	.main p {
     font-size: 16px;
     font-weight: 300;
 		line-height: 1.4em;
   }
+
+	.pearl-hacks-logo {
+	  width: 40%;
+	  margin: -20px -20px 0 30px;
+	  float: right;
+	}
+
+#events-collage {
+	padding: 0 3%;
+}
+
+	.collage img {
+		width: 20%;
+		float: left;
+		-webkit-filter: brightness(70%);
+		-webkit-transition: .8s all;
+	}
+
+	.collage img:hover {
+		-webkit-filter: brightness(100%);
+	}
+
+	.collage img:last-child {
+		margin-bottom: 80px;
+	}
+
+	#logo-collage {
+		margin-top: 50px;
+	}
+
+	#logo-collage img {
+		-webkit-filter: brightness(100%);
+	}
+
+	.events-2 {
+		width: 39%;
+	  margin: 50px 5%;
+		vertical-align: middle;
+	}
+
+	.collage .events-1 {
+		width: 25%;
+	  margin: 50px 2%;
+		vertical-align: middle;
+		-webkit-filter: brightness(100%);
+	}
+
+	.collage .events-3 {
+		width: 40%;
+	  margin: 80px 1%;
+		vertical-align: middle;
+		-webkit-filter: brightness(100%);
+	}
+
+.hidden-img {
+	display: block;
+}
+
+@media only screen and (max-width: 800px) {
+	.story-wrapper {
+	  width: 70%;
+	  margin: 0 15%;
+	}
+	.pearl-hacks-logo {
+	  width: 45%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.story-wrapper {
+	  width: 80%;
+	  margin: 0 10%;
+	}
+	.hidden-img {
+		display: none;
+	}
+	.collage img {
+	  width: 33.3333%;
+	}
+	#header {
+		display: none;
+	}
+	#menu {
+		top: 0;
+	}
+	#initials {
+		display: block;
+	}
+	.main {
+	  margin: 70px 0;
+	}
+	.collage .events-3 {
+	  margin: 80px 1%;
+		width: 54%;
+	}
+	.collage .events-1 {
+		width: 40%;
+	}
+	.collage .flawless {
+		width: 80%;
+		margin: 0 10%;
+	}
+	.events-2 {
+		margin: 50px 2% 10px 1%;
+		width: 46%;
+	}
+	.collage img:last-child {
+	  margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#menu {
+		margin-left: 3%;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.menu-mobile {
+		display: block;
+	}
+	.menu-desktop {
+		display: none;
+	}
+}
